@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="6" short-name="passengers" url="https://polygon.codeforces.com/p7f92CL/A7md_lbanna/passengers">
+    <names>
+        <name language="english" value="Passengers"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>500</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>203</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test method="manual" sample="true"/>
+                <test description="File &quot;out 3 (3).txt&quot;" method="manual"/>
+                <test description="File &quot;out 3 (4).txt&quot;" method="manual"/>
+                <test description="File &quot;out 3 (5).txt&quot;" method="manual"/>
+                <test description="File &quot;out 3 (6).txt&quot;" method="manual"/>
+                <test description="File &quot;out 3 (7).txt&quot;" method="manual"/>
+                <test description="File &quot;out 4 (1).txt&quot;" method="manual"/>
+                <test description="File &quot;out 4 (2).txt&quot;" method="manual"/>
+                <test description="File &quot;out 4 (3).txt&quot;" method="manual"/>
+                <test description="File &quot;out 4 (4).txt&quot;" method="manual"/>
+                <test description="File &quot;out 4 (5).txt&quot;" method="manual"/>
+                <test description="File &quot;out 4 (6).txt&quot;" method="manual"/>
+                <test description="File &quot;out 4 (7).txt&quot;" method="manual"/>
+                <test description="File &quot;out 4 (8).txt&quot;" method="manual"/>
+                <test description="File &quot;out 4 (9).txt&quot;" method="manual"/>
+                <test description="File &quot;out 4 (10).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (1).txt&quot;" method="manual"/>
+                <test method="manual"/>
+                <test description="File &quot;out 5 (2).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (3).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (4).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (5).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (6).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (7).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (8).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (9).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (10).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (11).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (12).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (13).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (14).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (15).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (16).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (17).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (18).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (19).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (20).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (21).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (22).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (23).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (24).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (25).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (26).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (27).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (28).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (29).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (30).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (31).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (32).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (33).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (34).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (35).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (36).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (37).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (38).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (39).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (40).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (41).txt&quot;" method="manual"/>
+                <test description="File &quot;out 5 (42).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (1).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (2).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (3).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (4).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (5).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (6).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (7).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (8).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (9).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (10).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (11).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (12).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (13).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (14).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (15).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (16).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (17).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (18).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (19).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (20).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (21).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (22).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (23).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (24).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (25).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (26).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (27).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (28).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (29).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (30).txt&quot;" method="manual"/>
+                <test description="File &quot;out 6 (31).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (1).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (2).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (3).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (4).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (5).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (6).txt&quot;" method="manual"/>
+                <test method="manual"/>
+                <test description="File &quot;out 7 (7).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (8).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (9).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (10).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (11).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (12).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (13).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (14).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (15).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (16).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (17).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (18).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (19).txt&quot;" method="manual"/>
+                <test description="File &quot;out 7 (20).txt&quot;" method="manual"/>
+                <test description="File &quot;out00000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out00.txt&quot;" method="manual"/>
+                <test description="File &quot;out1000.txt&quot;" method="manual"/>
+                <test description="File &quot;out2000.txt&quot;" method="manual"/>
+                <test description="File &quot;out3000.txt&quot;" method="manual"/>
+                <test method="manual"/>
+                <test description="File &quot;out4000.txt&quot;" method="manual"/>
+                <test description="File &quot;out5000.txt&quot;" method="manual"/>
+                <test description="File &quot;out6000.txt&quot;" method="manual"/>
+                <test description="File &quot;out7000.txt&quot;" method="manual"/>
+                <test description="File &quot;out8000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9100.txt&quot;" method="manual"/>
+                <test description="File &quot;out9200.txt&quot;" method="manual"/>
+                <test description="File &quot;out9300.txt&quot;" method="manual"/>
+                <test description="File &quot;out10000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out20000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out30000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out40000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out50000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out60000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out70000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out80000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out90000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out91000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out92000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out93000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out94000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out95000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out96000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out97000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out98000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99100000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99200000000000000000.txt&quot;" method="manual"/>
+                <test method="manual"/>
+                <test description="File &quot;out99300000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99400000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99500000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99600000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99700000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99800000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99900000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99910000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99920000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99930000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99940000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99950000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99960000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99970000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99980000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99990000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99991000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99992000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99993000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99994000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99995000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99996000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99997000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99998000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99999000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out99999100000000000000.txt&quot;" method="manual"/>
+                <test method="manual"/>
+                <test description="File &quot;out0000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out1000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out2000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out3000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out4000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out5000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out6000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out7000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out8000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9000000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9100000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9200000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9300000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9400000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9500000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9600000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9700000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9800000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9900000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9910000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9920000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9930000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9940000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9950000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9960000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9970000000000000000.txt&quot;" method="manual"/>
+                <test description="File &quot;out9980000000000000000.txt&quot;" method="manual"/>
+                <test method="manual"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/Checker.cpp" type="cpp.g++17"/>
+                <binary path="files/Checker.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/Checker.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.g++17"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/Solution.cpp" type="cpp.g++17"/>
+                <binary path="solutions/Solution.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

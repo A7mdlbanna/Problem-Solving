@@ -1,0 +1,83 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define ll                      long long
+#define ld                      long double
+#define pb                      push_back
+#define all(x)                  x.begin(), x.end()
+#define rall(x)                 x.rbegin(), x.rend()
+#define prec(n)                 fixed << setprecision(n)
+#define fast                    cin.tie(0); std::ios_base::sync_with_stdio(false); 
+#define fra(i, x)               for (auto &i : x)
+#define fr(i, x, y)             for (ll i = (ll)x; i < (ll)y; ++i)
+#define fr1(i, x, y)            for (ll i = (ll)x; (ll)i <= (ll)y; ++i)
+#define frr(i, x, y)            for (ll i = (ll)x; i >= (ll)y; --i)
+#define frfr(i,j, ix, jx,y)     for (ll i = (ll)ix , j = (ll)jx; i >= (ll)y; ++i,j--)
+#define w(x)                    while(x--)
+
+typedef pair<ll, ll>            pll;
+typedef pair<string, ll>        psl; 
+typedef pair<ll, string>        pls; 
+typedef pair<string, string>    pss; 
+typedef vector<ll>              vl;
+typedef vector<bool>            vb; 
+typedef vector<string>          vs; 
+typedef vector<vl>              vvl;
+typedef vector<pll>             vpl;
+typedef vector<psl>             vpsl;
+typedef vector<pls>             vpls;
+typedef vector<pss>             vpss;
+typedef set<ll>                 sl;
+typedef set<string>             ss;
+typedef vector<vl>              vvl;
+typedef set<pll>                spl;
+typedef set<psl>                spsl;
+typedef set<pls>                spls;
+typedef set<pss>                spss;
+typedef map<ll, ll>             mll;
+typedef map<string, string>     mss;
+typedef map<string, ll>         msl;
+typedef map<ll, string>         mls;
+typedef stack<ll>               stl;
+typedef stack<char>             stc;
+typedef stack<string>           sts;
+
+
+int main(){
+    fast
+
+    string s;
+    cin >> s;
+
+    ////////////////////////////////////CLOWNS SOLUTION///////////////////////////////////////////
+    // ll right1=0, left1=0, length1=0, right2=0, left2=0, length2=0, right3=0, left3=0, length3=0;
+    // fra(i,s){
+    //     if(i =='(')right1++;
+    //     if(i ==')' and right1>0){right1--;length1+=2;}
+    //     if(i =='[')right2++;
+    //     if(i ==']' and right2>0){right2--;length2+=2;}
+    //     if(i =='{')right3++;
+    //     if(i =='}' and right3>0){right3--;length3+=2;}
+    // }
+    //     cout << (length1+length2+length3 == s.size() ? "yes" : "no") << endl;
+   
+    ////////////////////////////////////PRO SOLUTION///////////////////////////////////////////
+    stc st;
+    ll cnt = 0;
+    fra(s,s){
+        if(st.empty())st.push(s);
+        else{
+        if((st.top() == '(' and s==')') or (st.top() == '[' and s==']') or (st.top() == '{' and s=='}')) st.pop(); 
+        else st.push(s);
+        }
+    }
+    cout << (st.empty() ? "yes" : "no") << endl;
+    // cout << st.size();
+
+   //////////////////////////////////////OTHER SOLUTION//////////////////////////////////////////////
+   //   fr(i,1,s.size()){
+   //      cout << (ll)(s[i]) <<  s << endl;
+   //      if((ll)(s[i])==(ll)(s[i-1]+1) or (ll)(s[i])==(ll)(s[i-1]+2)){s.erase(s.begin()+i-1, s.begin()+i+1);i-=2;}
+   //   }
+   //   cout << s ; 
+}
