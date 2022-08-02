@@ -13,7 +13,7 @@ int main(int argc, char* argv[]) {
  if ((m*10) + (w*5) + c < n || n < 16){
         int NoSuitable = ouf.readInt();
         if(NoSuitable != -1)
-          quitf(_wa, "Number differ - expected: ""-1"", found: %d", NoSuitable);
+          quitf(_wa, "Number differ - expected: \"-1\", found: %d", NoSuitable);
         else 
             quit(_ok, "-1");
     }

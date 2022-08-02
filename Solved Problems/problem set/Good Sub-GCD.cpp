@@ -14,12 +14,19 @@ using namespace std;
 #define fri(it, x)              for (auto it = x.begin(); it != x.end(); ++it)
 #define frri(it, x)             for (auto it = x.end(); it != x.begin(); --it)
 #define lp(y)                   for (ll i = 0; i < (ll)y; ++i)
-#define fr(i, x)                for (ll i = (ll)x; ; ++i)
+#define lpj(y)                  for (ll j = 0; j < (ll)y; ++j)
+#define lpk(y)                  for (ll k = 0; k < (ll)y; ++k)
+#define lpl(y)                  for (ll l = 0; l < (ll)y; ++l)
+#define fr(i, x, y)             for (ll i = (ll)x; i < (ll)y; ++i)
 #define fr1(i, x, y)            for (ll i = (ll)x; (ll)i <= (ll)y; ++i)
 #define frr(i, x, y)            for (ll i = (ll)x; i >= (ll)y; --i)
-#define frfr(i,j, ix, jx,y)     for (ll i = (ll)ix , j = (ll)jx; i >= (ll)y; ++i,j--)
+#define frfr(i,j, ix, jx,y)     for (ll i = (ll)ix , j = (ll)jx; i < (ll)y; ++i,j--)
 #define st                      std::chrono::time_point<std::chrono::system_clock> start, end; start = std::chrono::system_clock::now();
-#define en                      end = std::chrono::system_clock::now(); chrono::duration<double> elapsed_seconds = end - start; cout << elapsed_seconds.count() << "s\n";
+#define en                      end = std::chrono::system_clock::now(); chrono::duration<double> elapsed_seconds = end - start;ds.count() << "s\n";
+#define ceil(n, m) (((n) / (m)) + ((n) % (m) ? 1 : 0))
+#define py                      cout << "YES" << endl;
+#define pn                      cout << "NO" << endl;
+#define sz                      size()
 
 typedef pair<ll, ll>                   pll;
 typedef pair<string, ll>               psl; 
@@ -80,27 +87,38 @@ typedef queue<string>                  qs;
 typedef deque<ll>                      deql;
 typedef deque<char>                    deqc;
 typedef deque<string>                  deqs; 
-const ld pi = 3.14159265359;
-       
+const ld pi = 3.141592653;
+const ll mod = 1e9+7;
+
+ll gcd(ll a, ll b){
+    return b == 0 ? a : gcd(b, a % b);
+}
+
 int main(){       
     fast
     ll t; cin >> t;
-    lp(t){
-        vl cyan, magenta, yellow, black;
-        ll x=3;
-        w(x){
-        ll x1, x2, x3, x4;
-        cin >> x1 >> x2 >> x3 >> x4;
-        cyan.pb(x1); magenta.pb(x2); yellow.pb(x3); black.pb(x4);
+    w(t){
+        ll n, k; cin >> n >> k;
+        vl v(n), sum(n);
+        fr(i, 0, n){
+            cin >> v[i];
+            sum[i] = v[i];
         }
-        sort(all(cyan)); sort(all(magenta)); sort(all(yellow)); sort(all(black));
-
-        vl valid; valid.pb(cyan[0]); valid.pb(magenta[0]); valid.pb(yellow[0]); valid.pb(black[0]);
-        sort(all(valid));
-        if(count(all(valid), 0)==4)cout << "Case #" << i+1 << ": "<< "IMPOSSIBLE" << endl;
-        if(count(all(valid), 0)==3 and valid[3]!=1000000)cout << "Case #" << i+1 << ": "<< "IMPOSSIBLE" << endl;
-        if(count(all(valid), 0)==2 and valid[2]!=1000000  and valid[3]!=1000000)cout << "Case #" << i+1 << ": "<< "IMPOSSIBLE" << endl;
-        if(count(all(valid), 0)==1 and valid[1]!=1000000 and valid[2]!=1000000 and valid[3]!=1000000)cout << "Case #" << i+1 << ": "<< "IMPOSSIBLE" << endl;
-        else cout << "Case #" << i+1 << ": " << cyan[0] <<  " " << magenta[0] << " " << yellow[0] << " " << black[0] << endl;
-    }
+        fr(i, 1, n)sum[i]+=sum[i-1];
+        fra(sum)cout << i << " "; cout << endl;
+        ll mx = 0;
+        lp(n){
+            fr(j, i, n){
+                    cout << "sum: " << sum[j]-sum[i] << endl;
+                if(sum[j]-sum[i] >= 20){
+                    ll GCD = gcd(v[i], v[i+1]);
+                    fr(p, i, j+1){
+                       GCD = gcd(GCD, v[p]);
+                    }
+                    mx = max(GCD, mx);
+                }
+            }
+        }
+        cout << mx << endl;
+    }   
 }
